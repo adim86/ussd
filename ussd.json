@@ -34,7 +34,12 @@
   {"network": "airtel", "name": "Check your Airtel Number", "description": "Check your Airtel number", "code":"*282#", "type": "info"},
   {"network": "airtel", "name": "Check Missed Calls and Notifications", "description": "Check your missed calls and notifications", "code":"*888#","type": "info"},
   {"network": "airtel", "name": "Check Special Offers", "description": "Check for special offers", "code":"*566#", "period":"", "type": "info"},
-  
+
+  {"network": "airtel", "name": "30 minutes Unlimited", "description": "This plan is valid for 30 minutes", "code":"*439*3#", "period":"daily", "type": "data", "price":"300", "plan":"unlimited"},
+  {"network": "airtel", "name": "60 minutes Unlimited", "description": "This plan is valid for 60 minutes", "code":"*439*4#", "period":"daily", "type": "data", "price":"500", "plan":"unlimited"},
+  {"network": "airtel", "name": "3 hours Unlimited Night", "description": "This plan is valid for 3 hours. Usable between 12 am and 5:59 am.", "code":"*481*2#", "period":"night", "type": "data", "price":"1000", "plan":"unlimited"},
+  {"network": "airtel", "name": "WEEKEND BUNDLE 200", "description": "This plan is valid between 12 am Saturday and 11:59 pm on Sunday", "code":"*472#", "period":"weekend", "type": "data", "price":"200", "plan":"200"},
+  {"network": "airtel", "name": "WEEKEND BUNDLE 500", "description": "This plan is usable between 12 am Saturday and 11:59 pm on Sunday", "code":"*473#", "period":"weekend", "type": "data", "price":"500", "plan":"500"},
   {"network": "airtel", "name": "50MB", "description": "This plan is valid for 24 hours", "code":"*410#", "period":"daily", "type": "data", "price":"100", "plan":"50"},
   {"network": "airtel", "name": "25MB", "description": "This plan is valid for 5 days 5MB daily", "code":"*401#", "period":"daily", "type": "data", "price":"100", "plan":"25"},
   {"network": "airtel", "name": "200MB", "description": "This plan is valid for 3 days", "code":"*412#", "period": "daily", "type": "data", "price":"200", "plan":"200"},
