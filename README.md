@@ -11,23 +11,23 @@ This is the one stop shop for all shortcode needs in Nigeria. At first we plan t
 These are the types of short codes that we currently have in our database and respective properties
 
 1. info - This is an informational type, does not cost any money to run (e.g Check Credit Balance)
-  - network (This is the name of the Telecom company who owns this plan e.g MTN, 9Mobile, Airtel and Glo)
-  - name (The way the plan is identified by the network e.g MEGA 5, 5GB for ₦2000)
-  - description (The details of the plan, including validity period)
-  - code (The USSD code to dail)
-  - period (The period in which the plan needs to be renewed e.g Daily, Weekly, Monthly, Quartertly)
-  - type (The various types of USSD e.g info or data)
+  - **network** (This is the name of the Telecom company who owns this plan e.g MTN, 9Mobile, Airtel and Glo)
+  - **name** (The way the plan is identified by the network e.g MEGA 5, 5GB for ₦2000)
+  - **description** (The details of the plan, including validity period)
+  - **code** (The USSD code to dail)
+  - **period** (The period in which the plan needs to be renewed e.g Daily, Weekly, Monthly, Quartertly)
+  - **type** (The various types of USSD e.g info or data)
 
 
 2. data - These are ussd that are used to topup your data (e.g 5GB for ₦2500 plan )
-  - network (This is the name of the Telecom company who owns this plan e.g MTN, 9Mobile, Airtel and Glo)
-  - name (The way the plan is identified by the network e.g MEGA 5, 5GB for ₦2000)
-  - description (The details of the plan, including validity period)
-  - code (The USSD code to dail)
-  - period (The period in which the plan needs to be renewed e.g Daily, Weekly, Monthly, Quartertly)
-  - type (The various types of USSD e.g info or data)
-  - price (The cost of the plan in Naira without the ₦ symbol)
-  - plan (The amount of data written in Mega Bytes e.g 2000 is 2GB)
+  - **network** (This is the name of the Telecom company who owns this plan e.g MTN, 9Mobile, Airtel and Glo)
+  - **name** (The way the plan is identified by the network e.g MEGA 5, 5GB for ₦2000)
+  - **description** (The details of the plan, including validity period)
+  - **code** (The USSD code to dail)
+  - **period** (The period in which the plan needs to be renewed e.g Daily, Weekly, Monthly, Quartertly)
+  - **type** (The various types of USSD e.g info or data)
+  - **price** (The cost of the plan in Naira without the ₦ symbol)
+  - **plan** (The amount of data written in Mega Bytes e.g 2000 is 2GB)
 
 more to come...
 
