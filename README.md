@@ -7,7 +7,7 @@ This is the one stop shop for all shortcode needs in Nigeria. At first we plan t
 3. Speed. Everything is fast and furious
 
 
-#Current Shortcode types
+# Current Shortcode types
 These are the types of short codes that we currently have in our database and respective properties
 
 1. info - This is an informational type, does not cost any money to run (e.g Check Credit Balance)
@@ -31,11 +31,10 @@ These are the types of short codes that we currently have in our database and re
 
 more to come...
 
-#Example of what JSON array looks like
+# Example of what JSON array looks like
 
 ```json
   [
-    [ 
   {"network": "9mobile", "name": "Data Balance Check", "description": "Check your data balance", "code":"*228#", "period":"", "type": "info"},
   {"network": "9mobile", "name": "Credit Balance Check", "description": "Check your credit balance", "code":"*232#", "period":"", "type": "info"},
   {"network": "9mobile", "name": "40MB for ₦100", "description": "This plan is valid for 24 hours", "code":"*229*3*1#", "period":"daily", "type": "data", "price":"100", "plan":"40"},
