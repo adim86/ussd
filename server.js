@@ -5,7 +5,7 @@ var express = require('express'),
     http_server;
 
 app.get( '/', function( req, res ){
-  res.send( 'hello world' );
+  res.json( ussd_codes );
 });
 
 http_server = app.listen( port, function(){
