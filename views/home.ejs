@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Naija USSD &bullet; Directory of Nigeria's USSD Codes</title>
+  </head>
+  <body>
+    <div>Total Codes: <%= ussd_codes.length %></div>
+    <br />
+    <br />
+    <% ussd_codes.forEach( function( details ){ %>
+      <span class="<%= details.network %>"><%= details.network %></span>
+      <a href="tel:<%= encodeURI( details.code ) %>"><%= details.name %></a>
+      <br />
+      <br />
+    <% }); %>
+  </body>
+</html>
