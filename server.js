@@ -10,7 +10,7 @@ app.enable( 'view cache' );
 app.use( express.static( 'public' ) );
 
 app.get( '/', function( req, res ){
-  res.render( 'home' );
+  res.render( 'home', { ussd_codes: ussd_codes });
 });
 
 http_server = app.listen( port, function(){
