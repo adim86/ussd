@@ -1,4 +1,10 @@
 # Naija USSD JSON
+## Directory of Nigerian USSD Codes
+
+### Staging Server
+```
+https://naijaussd.herokuapp.com
+```
 
 This is the one stop shop for all shortcode needs in Nigeria. At first we plan to tackle the renewal of data plans from telcos, later on we plan to document all short codes Nigerians have access to. The core this service provides is:
 
