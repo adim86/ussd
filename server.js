@@ -4,8 +4,13 @@ var express = require('express'),
     app = express(),
     http_server;
 
+app.set( 'view engine', 'ejs' );
+app.enable( 'view cache' );
+
+app.use( express.static( 'public' ) );
+
 app.get( '/', function( req, res ){
-  res.json( ussd_codes );
+  res.render( 'home' );
 });
 
 http_server = app.listen( port, function(){
