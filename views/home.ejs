@@ -9,7 +9,7 @@
     <br />
     <% ussd_codes.forEach( function( details ){ %>
       <span class="<%= details.network %>"><%= details.network %></span>
-      <a href="tel:<%= encodeURI( details.code ) %>"><%= details.name %></a>
+      <a href="tel:<%= encodeURIComponent( details.code ) %>"><%= details.name %></a>
       <br />
       <br />
     <% }); %>
