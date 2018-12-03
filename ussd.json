@@ -119,5 +119,5 @@
   {"network": "glo", "name": "4GB Flexi", "description": "100 Hrs or 30 days", "code":"*127*5#", "period":"weekly", "type": "data", "price":"20000", "plan":"120000"},
   {"network": "glo", "name": "12GB Flexi", "description": "300 Hrs or 3 Months", "code":"*127*4#", "period":"monthly", "type": "data", "price":"20000", "plan":"120000"},
   {"network": "glo", "name": "12GB Flexi", "description": "8PM to 9AM – Weekdays + All day on Weekends", "code":"*127*7#", "period":"weekend", "type": "data", "price":"20000", "plan":"120000"},
-  {"network": "glo", "name": "12GB Flexi", "description": "8 AM to 9 PM", "code":"*127*6#", "period":"daytime", "type": "data", "price":"20000", "plan":"120000"},
+  {"network": "glo", "name": "12GB Flexi", "description": "8 AM to 9 PM", "code":"*127*6#", "period":"daytime", "type": "data", "price":"20000", "plan":"120000"}
 ]
