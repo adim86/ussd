@@ -2,9 +2,27 @@ body {
   font-family: Arial, sans-serif;
 }
 
+  body > div {
+    display: block;
+    position: relative;
+    box-sizing: border-box;
+
+    padding: 1.5em;
+  }
+
+  @media screen and (min-width: 641px){
+    body > div {
+      padding: 2em;
+      max-width: 640px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
 #header {
-  margin-bottom: 3em;
-  padding: 1em;
+  margin-bottom: 1em;
+  margin-bottom: 0;
+  max-width: 100%;
 }
 
   #header > .wordmark {
@@ -14,7 +32,6 @@ body {
   }
 
 #codes {
-
 }
 
   #codes > .code {
