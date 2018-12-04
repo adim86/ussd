@@ -77,7 +77,7 @@
       <div id="filter-subcategories">
         <% for( var id in network_name_index ) { %>
           <div class="filter-subcategory filter-subcategory-network filter-subcategory-network-<%= id %>">
-            <input type="checkbox" />
+            <input type="checkbox" value="<%= id %>" />
             <span class="label"><%= network_name_index[ id ].name %></span>
           </div>
         <% } %>
@@ -95,5 +95,6 @@
         </div>
       <% }); %>
     </div>
+    <script src="js/behavior.js"></script>
   </body>
 </html>

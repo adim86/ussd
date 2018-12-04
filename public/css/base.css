@@ -81,6 +81,14 @@ body {
     margin-bottom: 2em;
   }
 
+  #codes.filtered > .code {
+    display: none;
+  }
+
+  #codes.filtered > .code.active {
+    display: block;
+  }
+
     #codes > .code > .network {
       display: inline-block;
       box-sizing: border-box;
