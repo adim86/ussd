@@ -52,16 +52,27 @@ body {
       background-color: #333;
       color: #ddd;
       width: 64px;
-      margin-top: -3px;
-      margin-right: .25em;
+      margin-right: 1.2em;
       border-radius: .375em;
-      vertical-align: 2px;
+      float: left;
     }
 
     #codes > .code > .name {
+      display: inline-block;
       font-weight: 900;
       letter-spacing: -1px;
+      max-width: 55%;
+      overflow: hidden;
     }
+
+    #codes > .code > .actions {
+      display: inline-block;
+      float: right;
+    }
+
+      #codes > .code > .actions > .action {
+        margin-left: .5em;
+      }
 
       #codes > .code > .actions > .dial {
         text-decoration: none;
