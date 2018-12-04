@@ -2,6 +2,9 @@
 <html>
   <head>
     <title>Naija USSD &bullet; Directory of Nigeria's USSD Codes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/base.css">
   </head>
   <body>
     <div>Total Codes: <%= ussd_codes.length %></div>
@@ -43,10 +46,15 @@
     }) %>
 
     <% ussd_codes.forEach( function( details ){ %>
-      <span class="<%= details.network %>"><%= details.network %></span>
-      <a href="tel:<%= encodeURIComponent( details.code ) %>"><%= details.name %></a>
-      <br />
-      <br />
+      <div class="code <%= details.network.toLowerCase() %>-code <%= details.type.toLowerCase() %>-code">
+        <span class="network"><%= details.network %></span>
+        <span class="name"><%= details.name %></span>
+        <span class="actions">
+          <span class="details">🔎</span>
+          <span class="fave">⭐</span>
+          <a class="dial" href="tel:<%= encodeURIComponent( details.code ) %>">📞</a>
+        </span>
+      </div>
     <% }); %>
   </body>
 </html>

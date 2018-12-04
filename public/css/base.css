@@ -1,0 +1,7 @@
+.code {
+  margin-bottom: 2em;
+}
+
+  .code > .actions > .dial {
+    text-decoration: none;
+  }
