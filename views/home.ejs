@@ -7,6 +7,34 @@
     <div>Total Codes: <%= ussd_codes.length %></div>
     <br />
     <br />
+    <% ussd_codes.sort( function( a, b ){
+      var a_network = a.network.toLowerCase(),
+          b_network = b.network.toLowerCase();
+
+      if( a_network > b_network ) return 1;
+      if( a_network < b_network ) return -1;
+
+      var a_type = a.type.toLowerCase(),
+          b_type = b.type.toLowerCase();
+
+      if( a_type !== 'info' && b_type == 'info' ) return 1;
+      if( a_type !== 'data' && b_type == 'data' ) return -1;
+
+      if( a_type == 'data' && b_type == 'data' ){
+        var a_plan = parseInt( a.plan ),
+            b_plan = parseInt( b.plan );
+
+        if( a_plan > b_plan ) return 1;
+        if( a_plan < b_plan ) return -1;
+      }
+
+      var a_name = a.name.toLowerCase(),
+          b_name = b.name.toLowerCase();
+
+      if( a_name > b_name ) return 1;
+      if( a_name < b_name ) return -1;
+    }) %>
+
     <% ussd_codes.forEach( function( details ){ %>
       <span class="<%= details.network %>"><%= details.network %></span>
       <a href="tel:<%= encodeURIComponent( details.code ) %>"><%= details.name %></a>
