@@ -6,6 +6,18 @@
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/emoji.css">
     <link rel="stylesheet" type="text/css" href="css/base.css">
+    <style type="text/css">
+      <% var network_name_index = {}; %>
+
+      <% networks.forEach( function( network ){ %>
+        <% network_name_index[ network.network.toLowerCase() ] = network; %>
+
+        #codes > .<%= network.network.toLowerCase() %>-code > .network {
+          background-color: <%= network["primary-color"] %>;
+          color: <%= network["secnodary-color"] %>;
+        }
+      <% }); %>
+    </style>
   </head>
   <body>
     <div id="header">
@@ -56,7 +68,7 @@
 
       <% ussd_codes.forEach( function( details ){ %>
         <div class="code <%= details.network.toLowerCase() %>-code <%= details.type.toLowerCase() %>-code">
-          <span class="network"><%= details.network %></span>
+          <span class="network"><%= network_name_index[ details.network.toLowerCase() ].name %></span>
           <span class="name"><%= details.name %></span>
           <span class="actions">
             <span class="action fave">⭐</span>
