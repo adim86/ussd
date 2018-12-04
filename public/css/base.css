@@ -1,7 +1,26 @@
-.code {
-  margin-bottom: 2em;
+body {
+  font-family: Arial, sans-serif;
 }
 
-  .code > .actions > .dial {
-    text-decoration: none;
+#header {
+  margin-bottom: 3em;
+  padding: 1em;
+}
+
+  #header > .wordmark {
+    font-weight: 900;
+    font-size: 1.375em;
+    letter-spacing: -1px;
   }
+
+#codes {
+
+}
+
+  #codes > .code {
+    margin-bottom: 2em;
+  }
+
+    #codes > .code > .actions > .dial {
+      text-decoration: none;
+    }

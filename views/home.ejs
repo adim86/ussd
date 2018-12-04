@@ -7,54 +7,58 @@
     <link rel="stylesheet" type="text/css" href="css/base.css">
   </head>
   <body>
+    <div id="header">
+      <div class="wordmark">☎️ Naija USSD</div>
+    </div>
     <div>Total Codes: <%= ussd_codes.length %></div>
     <br />
     <br />
-    <% ussd_codes.sort( function( a, b ){
-      var a_type = a.type.toLowerCase(),
-          b_type = b.type.toLowerCase();
+    <div id="codes">
+      <% ussd_codes.sort( function( a, b ){
+        var a_type = a.type.toLowerCase(),
+            b_type = b.type.toLowerCase();
 
-      if( a_type !== 'info' && b_type == 'info' ) return 1;
-      if( a_type == 'info' && b_type !== 'info' ) return -1;
+        if( a_type !== 'info' && b_type == 'info' ) return 1;
+        if( a_type == 'info' && b_type !== 'info' ) return -1;
 
-      if( a_type == 'data' && b_type == 'data' ){
-        var a_plan = parseInt( a.plan ),
-            b_plan = parseInt( b.plan );
+        if( a_type == 'data' && b_type == 'data' ){
+          var a_plan = parseInt( a.plan ),
+              b_plan = parseInt( b.plan );
 
-        if( a_plan > b_plan ) return 1;
-        if( a_plan < b_plan ) return -1;
+          if( a_plan > b_plan ) return 1;
+          if( a_plan < b_plan ) return -1;
 
-        var a_price = parseInt( a.price ),
-            b_price = parseInt( b.price );
+          var a_price = parseInt( a.price ),
+              b_price = parseInt( b.price );
 
-        if( a_price > b_price ) return 1;
-        if( a_price < b_price ) return -1;
-      }
+          if( a_price > b_price ) return 1;
+          if( a_price < b_price ) return -1;
+        }
 
-      var a_network = a.network.toLowerCase(),
-          b_network = b.network.toLowerCase();
+        var a_network = a.network.toLowerCase(),
+            b_network = b.network.toLowerCase();
 
-      if( a_network > b_network ) return 1;
-      if( a_network < b_network ) return -1;
+        if( a_network > b_network ) return 1;
+        if( a_network < b_network ) return -1;
 
-      var a_name = a.name.toLowerCase(),
-          b_name = b.name.toLowerCase();
+        var a_name = a.name.toLowerCase(),
+            b_name = b.name.toLowerCase();
 
-      if( a_name > b_name ) return 1;
-      if( a_name < b_name ) return -1;
+        if( a_name > b_name ) return 1;
+        if( a_name < b_name ) return -1;
+      }) %>
 
-    }) %>
-
-    <% ussd_codes.forEach( function( details ){ %>
-      <div class="code <%= details.network.toLowerCase() %>-code <%= details.type.toLowerCase() %>-code">
-        <span class="network"><%= details.network %></span>
-        <span class="name"><%= details.name %></span>
-        <span class="actions">
-          <span class="details">🔎</span>
-          <span class="fave">⭐</span>
-          <a class="dial" href="tel:<%= encodeURIComponent( details.code ) %>">📞</a>
-        </span>
-      </div>
-    <% }); %>
+      <% ussd_codes.forEach( function( details ){ %>
+        <div class="code <%= details.network.toLowerCase() %>-code <%= details.type.toLowerCase() %>-code">
+          <span class="network"><%= details.network %></span>
+          <span class="name"><%= details.name %></span>
+          <span class="actions">
+            <span class="details">🔎</span>
+            <span class="fave">⭐</span>
+            <a class="dial" href="tel:<%= encodeURIComponent( details.code ) %>">📞</a>
+          </span>
+        </div>
+      <% }); %>
+    </div>
   </body>
 </html>
