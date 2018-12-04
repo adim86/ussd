@@ -41,18 +41,17 @@ body {
 
   #codes > .code {
     margin-bottom: 2em;
-    font-size: .85em;
   }
 
     #codes > .code > .network {
       display: inline-block;
       box-sizing: border-box;
       text-align: center;
-      font-size: .65em;
+      font-size: .64em;
       padding: .25em .75em;
       background-color: #333;
       color: #ddd;
-      width: 49px;
+      width: 64px;
       margin-top: -3px;
       margin-right: .25em;
       border-radius: .375em;
