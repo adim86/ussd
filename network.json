@@ -1,0 +1,6 @@
+[ 
+  {"network": "9mobile", "name": "9Mobile", "primary-color": "#006848", "secnodary-color":"#B4C404", "tetiary-color":"#ffffff","phone1" :"+2348090000200", "email":"care@9mobile.com.ng", "website":"http://9mobile.com.ng/"},
+  {"network": "mtn", "name": "MTN", "primary-color": "#ffbe00", "secnodary-color":"#006993", "tetiary-color":"#ffffff", "phone1" :"+2348031000180 ", "email":"customercare3@mtn.com", "website":"https://www.mtnonline.com"},
+  {"network": "airtel", "name": "Airtel", "primary-color": "#EC1C22", "secnodary-color":"#ffffff", "tetiary-color":"#ffffff", "phone1" :"+2348021500111", "phone2":"+2348021500121", "email":"customercare@ng.airtel.com", "website":"https://www.airtel.com.ng"},
+  {"network": "glo", "name": "Glo", "primary-color": "##45B64B", "secnodary-color":"#ffffff", "tetiary-color":"#ffffff", "phone1" :"+2348050020121", "phone2":"+2348050020200", "email":"customercare@gloworld.com", "website":"http://gloworld.com"},
+]
