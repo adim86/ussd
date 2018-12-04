@@ -11,6 +11,14 @@
     <div id="header">
       <div class="wordmark"><i class="em em-logo"></i> Naija USSD</div>
     </div>
+    <div id="filters">
+      <div class="title">Filters</div>
+      <div id="filter-categories">
+        <span class="filter-category filter-category-network active">Network</span>
+        <span class="filter-category filter-category-type">Type</span>
+        <span class="filter-category filter-category-reset">Reset</span>
+      </div>
+    </div>
     <div id="codes">
       <% ussd_codes.sort( function( a, b ){
         var a_type = a.type.toLowerCase(),

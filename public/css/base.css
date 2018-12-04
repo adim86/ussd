@@ -36,6 +36,33 @@ body {
       margin-right: .25em;
     }
 
+#filters {
+  text-align: center;
+}
+
+  #filters > .title {
+    display: none;
+    font-weight: 900;
+    margin-bottom: .5em;
+    letter-spacing: -1px;
+  }
+
+    #filters > #filter-categories {
+    }
+
+      #filters > #filter-categories > .filter-category {
+        padding: .375em 1em;
+        font-size: 0.85em;
+        text-transform: uppercase;
+      }
+
+      #filters > #filter-categories > .filter-category.active {
+        background-color: green;
+        border-radius: 1.25em;
+        font-weight: 900;
+        color: white;
+      }
+
 #codes {
 }
 
