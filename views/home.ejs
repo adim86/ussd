@@ -26,6 +26,12 @@
 
         if( a_plan > b_plan ) return 1;
         if( a_plan < b_plan ) return -1;
+
+        var a_price = parseInt( a.price ),
+            b_price = parseInt( b.price );
+
+        if( a_price > b_price ) return 1;
+        if( a_price < b_price ) return -1;
       }
 
       var a_name = a.name.toLowerCase(),
