@@ -41,8 +41,29 @@ body {
 
   #codes > .code {
     margin-bottom: 2em;
+    font-size: .85em;
   }
 
-    #codes > .code > .actions > .dial {
-      text-decoration: none;
+    #codes > .code > .network {
+      display: inline-block;
+      box-sizing: border-box;
+      text-align: center;
+      font-size: .65em;
+      padding: .25em .75em;
+      background-color: #333;
+      color: #ddd;
+      width: 49px;
+      margin-top: -3px;
+      margin-right: .25em;
+      border-radius: .375em;
+      vertical-align: 2px;
     }
+
+    #codes > .code > .name {
+      font-weight: 900;
+      letter-spacing: -1px;
+    }
+
+      #codes > .code > .actions > .dial {
+        text-decoration: none;
+      }
