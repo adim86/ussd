@@ -1,0 +1,79 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+  body > div {
+    display: block;
+    position: relative;
+    box-sizing: border-box;
+
+    padding: 1.5em;
+  }
+
+  @media screen and (min-width: 641px){
+    body > div {
+      padding: 2em;
+      max-width: 640px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+#header {
+  margin-bottom: 1em;
+  margin-bottom: 0;
+  max-width: 100%;
+}
+
+  #header > .wordmark {
+    font-weight: 900;
+    font-size: 1.375em;
+    letter-spacing: -1px;
+  }
+
+    #header > .wordmark > .em-logo {
+      margin-top: -5px;
+      margin-right: .25em;
+    }
+
+#codes {
+}
+
+  #codes > .code {
+    margin-bottom: 2em;
+  }
+
+    #codes > .code > .network {
+      display: inline-block;
+      box-sizing: border-box;
+      text-align: center;
+      font-size: .64em;
+      padding: .25em .75em;
+      background-color: #333;
+      color: #ddd;
+      width: 64px;
+      margin-right: 1.2em;
+      border-radius: .375em;
+      float: left;
+    }
+
+    #codes > .code > .name {
+      display: inline-block;
+      font-weight: 900;
+      letter-spacing: -1px;
+      max-width: 55%;
+      overflow: hidden;
+    }
+
+    #codes > .code > .actions {
+      display: inline-block;
+      float: right;
+    }
+
+      #codes > .code > .actions > .action {
+        margin-left: .5em;
+      }
+
+      #codes > .code > .actions > .dial {
+        text-decoration: none;
+      }
