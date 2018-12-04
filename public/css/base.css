@@ -51,8 +51,9 @@ body {
     }
 
       #filters > #filter-categories > .filter-category {
-        padding: .375em 1em;
+        display: inline-block;
         font-size: 0.85em;
+        padding: .375em 1em;
         text-transform: uppercase;
       }
 
@@ -61,6 +62,16 @@ body {
         border-radius: 1.25em;
         font-weight: 900;
         color: white;
+      }
+
+    #filters > #filter-subcategories {
+      margin-top: 1em;
+      text-align: left;
+    }
+
+      #filters > #filter-subcategories > .filter-subcategory {
+        display: inline-block;
+        margin-right: .5em;
       }
 
 #codes {
