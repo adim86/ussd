@@ -122,3 +122,15 @@ body {
       #codes > .code > .actions > .dial {
         text-decoration: none;
       }
+
+    #codes > .code > .description {
+      display: block;
+      overflow: hidden;
+      clear: both;
+      max-width: 55%;
+      margin-left: 64px;
+      padding-left: 0.8em;
+      color: #888;
+      margin-top: .1em;
+      line-height: 1.25em;
+    }
