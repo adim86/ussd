@@ -96,8 +96,7 @@
 
 
   {"network": "glo", "name": "Data Balance Check", "description": "Check your data balance", "code":"*127*0#", "type": "info"},
-  {"network": "glo", "name": "Data Balance Check", "description": "Check your data balance", "code":"*777#", "type": "info"},
-  {"network": "glo", "name": "Credit Balance Check", "description": "Check your credit balance", "code":"*124#", "type": "info"},
+  {"network": "glo", "name": "Credit Balance Check", "description": "Check your credit balance", "code":"*124*1#", "type": "info"},
   {"network": "glo", "name": "₦25 Data Plan", "description": "This plan is valid for 24 hours", "code":"*127*32#", "period":"daily", "type": "data", "price":"25", "plan":"10"},
   {"network": "glo", "name": "₦50 Data Plan", "description": "This plan is valid for 24 hours", "code":"*127*14#", "period": "daily", "type": "data", "price":"50", "plan":"15"},
   {"network": "glo", "name": "₦100 Data Plan", "description": "This plan is valid for 24 hours", "code": "*127*51#","period":"daily", "type": "data", "price":"100", "plan":"35"},
