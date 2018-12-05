@@ -53,7 +53,7 @@ function update_filters(){
 
   else {
     ussd_codes_dom.forEach( function( code_dom ){
-      code_dom_classes.remove( 'active' );
+      code_dom.classList.remove( 'active' );
     });
 
     document.querySelector( '#codes' ).classList.remove( 'filtered' );
