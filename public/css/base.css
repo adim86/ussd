@@ -36,11 +36,56 @@ body {
       margin-right: .25em;
     }
 
+#filters {
+  text-align: center;
+}
+
+  #filters > .title {
+    font-weight: 900;
+    margin-bottom: .5em;
+    letter-spacing: -1px;
+  }
+
+    #filters > #filter-categories {
+      display: none;
+    }
+
+      #filters > #filter-categories > .filter-category {
+        display: inline-block;
+        font-size: 0.85em;
+        padding: .375em 1em;
+        text-transform: uppercase;
+      }
+
+      #filters > #filter-categories > .filter-category.active {
+        background-color: green;
+        border-radius: 1.25em;
+        font-weight: 900;
+        color: white;
+      }
+
+    #filters > #filter-subcategories {
+      margin-top: 1em;
+    }
+
+      #filters > #filter-subcategories > .filter-subcategory {
+        display: inline-block;
+        margin-right: .5em;
+      }
+
 #codes {
 }
 
   #codes > .code {
     margin-bottom: 2em;
+  }
+
+  #codes.filtered > .code {
+    display: none;
+  }
+
+  #codes.filtered > .code.active {
+    display: block;
   }
 
     #codes > .code > .network {
@@ -77,3 +122,15 @@ body {
       #codes > .code > .actions > .dial {
         text-decoration: none;
       }
+
+    #codes > .code > .description {
+      display: block;
+      overflow: hidden;
+      clear: both;
+      max-width: 55%;
+      margin-left: 64px;
+      padding-left: 0.8em;
+      color: #888;
+      margin-top: .1em;
+      line-height: 1.25em;
+    }
