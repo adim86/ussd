@@ -41,13 +41,13 @@ body {
 }
 
   #filters > .title {
-    display: none;
     font-weight: 900;
     margin-bottom: .5em;
     letter-spacing: -1px;
   }
 
     #filters > #filter-categories {
+      display: none;
     }
 
       #filters > #filter-categories > .filter-category {
