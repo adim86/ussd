@@ -1,6 +1,6 @@
 CACHE MANIFEST
 
-# Last Update: 2018-12-06 @ 7:49AM EST
+# Last Update: 2018-12-06 @ 6:02AM EST
 
 CACHE:
 /
@@ -9,7 +9,6 @@ css/reset.css
 css/emoji.css
 css/base.css
 js/behavior.js
-js/pretty-bytes.js
 img/webapp-logo.png
 img/emoji-rotary-phone.png
 
@@ -23,6 +22,5 @@ css/reset.css css/reset.css
 css/emoji.css css/emoji.css
 css/base.css css/base.css
 js/behavior.js js/behavior.js
-js/pretty-bytes.js js/pretty-bytes.js
 img/webapp-logo.png img/webapp-logo.png
 img/emoji-rotary-phone.png img/emoji-rotary-phone.png
