@@ -59,3 +59,15 @@ function update_filters(){
     document.querySelector( '#codes' ).classList.remove( 'filtered' );
   }
 }
+
+window.addEventListener( 'load', function(){
+  var appcache_exists = 'applicationCache' in window;
+  if( ! appcache_exists ) return;
+
+  window.applicationCache.addEventListener( 'updateready', function(){
+    window.applicationCache.swap();
+
+    var load_new_version = confirm( 'Updates Downloaded. Load Now?' );
+    if( load_new_version ) window.location.reload();
+  });
+});

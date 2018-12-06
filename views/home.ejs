@@ -93,7 +93,26 @@
             <span class="action fave">⭐</span>
             <a class="action dial" href="tel:<%= encodeURIComponent( details.code ) %>">📞</a>
           </span>
-          <span class="description"><%= details.description %></span>
+          <% if( details.type == "data" ){ %>
+            <span class="description">
+              <div class="description-detail">
+                <span class="description-detail-key">Data</span>
+                <% var numerified_data = parseInt( details.plan ); %>
+                <span class="description-detail-value"><%= typeof numerified_data == 'number' && ! isNaN( numerified_data ) ? pretty_bytes( numerified_data * 1000 * 1000 ) : details.plan %></span>
+              </div>
+              <div class="description-detail">
+                <span class="description-detail-key">Price</span>
+                <span class="description-detail-value">₦<%= details.price %></span>
+              </div>
+              <div class="description-detail">
+                <span class="description-detail-key">Expires</span>
+                <span class="description-detail-value"><%= details.period %></span>
+              </div>
+              <div class="description-detail">
+                <span class="description-detail-notes"><%= details.description %></span>
+              </div>
+            </span>
+          <% } %>
         </div>
       <% }); %>
     </div>
