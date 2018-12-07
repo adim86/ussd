@@ -25,6 +25,7 @@
     "cjs-noticeboard": "0.0.7",
     "cjs-task": "^1.1.1",
     "ejs": "^2.6.1",
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "pretty-bytes": "^5.1.0"
   }
 }

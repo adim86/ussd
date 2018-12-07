@@ -44,10 +44,13 @@
   if( a_name < b_name ) return -1;
 }) %>
 <!doctype html>
-<html>
+<html manifest="manifest.appcache">
   <head>
     <title>Naija USSD &bullet; Directory of Nigeria's USSD Codes</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="img/webapp-logo.png">
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/emoji.css">
     <link rel="stylesheet" type="text/css" href="css/base.css">
@@ -90,7 +93,26 @@
             <span class="action fave">⭐</span>
             <a class="action dial" href="tel:<%= encodeURIComponent( details.code ) %>">📞</a>
           </span>
-          <span class="description"><%= details.description %></span>
+          <% if( details.type == "data" ){ %>
+            <span class="description">
+              <div class="description-detail">
+                <span class="description-detail-key">Data</span>
+                <% var numerified_data = parseInt( details.plan ); %>
+                <span class="description-detail-value"><%= typeof numerified_data == 'number' && ! isNaN( numerified_data ) ? pretty_bytes( numerified_data * 1000 * 1000 ) : details.plan %></span>
+              </div>
+              <div class="description-detail">
+                <span class="description-detail-key">Price</span>
+                <span class="description-detail-value">₦<%= details.price %></span>
+              </div>
+              <div class="description-detail">
+                <span class="description-detail-key">Expires</span>
+                <span class="description-detail-value"><%= details.period %></span>
+              </div>
+              <div class="description-detail">
+                <span class="description-detail-notes"><%= details.description %></span>
+              </div>
+            </span>
+          <% } %>
         </div>
       <% }); %>
     </div>
