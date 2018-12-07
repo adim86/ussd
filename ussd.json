@@ -113,10 +113,10 @@
   {"network": "glo", "name": "₦15,000 Data Plan", "description": "This plan is valid for 30 days", "code":"*127*12#", "period":"monthly", "type": "data", "price":"15000", "plan":"80000"},
   {"network": "glo", "name": "₦18,000 Data Plan", "description": "This plan is valid for 30 days", "code":"*127*13#", "period":"monthly", "type": "data", "price":"18000", "plan":"100000"},
   {"network": "glo", "name": "₦20,000 Data Plan", "description": "This plan is valid for 30 days", "code":"*127*33#", "period":"monthly", "type": "data", "price":"20000", "plan":"120000"},
-  {"network": "glo", "name": "3GB Flexi", "description": "7 days (Weekend – Saturday 12 am – Sunday 11.59pm)", "code":"*127*61#", "period":"weekend", "type": "data", "price":"20000", "plan":"120000"},
-  {"network": "glo", "name": "1GB Flexi ", "description": "1 day (12am – 5am)", "code":"*127*60#", "period":"daily", "type": "data", "price":"20000", "plan":"120000"},
-  {"network": "glo", "name": "4GB Flexi", "description": "100 Hrs or 30 days", "code":"*127*5#", "period":"weekly", "type": "data", "price":"20000", "plan":"120000"},
-  {"network": "glo", "name": "12GB Flexi", "description": "300 Hrs or 3 Months", "code":"*127*4#", "period":"monthly", "type": "data", "price":"20000", "plan":"120000"},
-  {"network": "glo", "name": "12GB Flexi", "description": "8PM to 9AM – Weekdays + All day on Weekends", "code":"*127*7#", "period":"weekend", "type": "data", "price":"20000", "plan":"120000"},
-  {"network": "glo", "name": "12GB Flexi", "description": "8 AM to 9 PM", "code":"*127*6#", "period":"daytime", "type": "data", "price":"20000", "plan":"120000"}
+
+  {"network": "glo", "name": "Flexi G 100", "description": "100 Hrs or 30 days", "code":"*127*5#", "period":"monthly", "type": "data", "price":"6000", "plan":"4000"},
+  {"network": "glo", "name": "Flexi G 300", "description": "300 Hrs or 3 Months", "code":"*127*4#", "period":"monthly", "type": "data", "price":"15000", "plan":"12000"},
+  {"network": "glo", "name": "G-Leisure", "description": "Valid 8PM to 9AM – Weekdays + All day on Weekends", "code":"*127*7#", "period":"monthly", "type": "data", "price":"5000", "plan":"12000"},
+  {"network": "glo", "name": "G-Work", "description": "Valid 8 AM to 9 PM", "code":"*127*6#", "period":"monthly", "type": "data", "price":"6000", "plan":"12000"},
+  
 ]
