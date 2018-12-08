@@ -6,6 +6,11 @@ var ussd_codes_dom = document.querySelectorAll( '#codes > .code' ),
       types: []
     };
 
+// configure google tag manager
+  window.dataLayer = window.dataLayer || [];
+  gtag( 'js', new Date() );
+  gtag( 'config', 'UA-130571772-1' );
+
 filter_subcategories_dom.addEventListener( 'click', function( e ){
   var target_tag_name = e.target.tagName.toLowerCase();
   if( target_tag_name !== 'input' ) return;
@@ -58,6 +63,10 @@ function update_filters(){
 
     document.querySelector( '#codes' ).classList.remove( 'filtered' );
   }
+}
+
+function gtag(){
+  dataLayer.push( arguments );
 }
 
 window.addEventListener( 'load', function(){
