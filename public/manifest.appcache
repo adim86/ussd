@@ -1,6 +1,6 @@
 CACHE MANIFEST
 
-# Last Update: 2018-12-08 @ 11:37AM EST
+# Last Update: 2018-12-08 @ 12:22PM EST
 
 CACHE:
 /
@@ -13,7 +13,7 @@ img/webapp-logo.png
 img/emoji-rotary-phone.png
 
 NETWORK:
-http://www.google-analytics.com
+https://www.google-analytics.com
 https://www.googletagmanager.com
 
 FALLBACK:
