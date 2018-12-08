@@ -117,6 +117,5 @@
   {"network": "glo", "name": "Flexi G 100", "description": "100 Hrs or 30 days", "code":"*127*5#", "period":"monthly", "type": "data", "price":"6000", "plan":"4000"},
   {"network": "glo", "name": "Flexi G 300", "description": "300 Hrs or 3 Months", "code":"*127*4#", "period":"monthly", "type": "data", "price":"15000", "plan":"12000"},
   {"network": "glo", "name": "G-Leisure", "description": "Valid 8PM to 9AM – Weekdays + All day on Weekends", "code":"*127*7#", "period":"monthly", "type": "data", "price":"5000", "plan":"12000"},
-  {"network": "glo", "name": "G-Work", "description": "Valid 8 AM to 9 PM", "code":"*127*6#", "period":"monthly", "type": "data", "price":"6000", "plan":"12000"},
-  
+  {"network": "glo", "name": "G-Work", "description": "Valid 8 AM to 9 PM", "code":"*127*6#", "period":"monthly", "type": "data", "price":"6000", "plan":"12000"}
 ]
